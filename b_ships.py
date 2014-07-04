@@ -185,7 +185,7 @@ class Game:
         if player_row not in ROWS:
             print('Invalid row')
             return self.player_choice()
-        elif player_column > 12 or player_column < 0:
+        elif player_column >= 12 or player_column < 0:
             print('Ivalid column.That is out of range')
             return self.player_choice()
         else:
